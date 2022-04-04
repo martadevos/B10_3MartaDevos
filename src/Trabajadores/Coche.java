@@ -9,4 +9,9 @@ public class Coche {
         this.marca = marca;
         this.modelo = modelo;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Matricula: %S\nMarca: %S\nModelo: %S",matricula,marca, modelo);
+    }
 }

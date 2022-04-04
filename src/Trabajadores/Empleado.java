@@ -16,4 +16,16 @@ public abstract class Empleado {
     }
 
     public abstract void subirSalario();
+
+    @Override
+    public String toString() {
+        return String.format("""
+                DATOS DEL EMPLEADO:
+                    Nombre completo: %S %S
+                    DNI: %S
+                    Tlf: %S
+                    Dirección: %S
+                    Salario: %S
+                    Antigüedad en la empresa: %S""", nombre, apellidos, dni, telf, direccion, salario, antiguedad);
+    }
 }

@@ -17,7 +17,7 @@ public class Programador extends Empleado implements Cambios{
 
     @Override
     public Portatil cambiarPortatil() {
-        return null;
+        portatil = new Portatil("3452345AGH", );
     }
 
     @Override
@@ -28,5 +28,17 @@ public class Programador extends Empleado implements Cambios{
     @Override
     public void subirSalario() {
 
+    }
+
+    @Override
+    public String toString() {
+        return String.format("""
+                %S
+                PUESTO: Programador
+                    Teléfono de la empresa: %S
+                    Proyecto en que trabaja: %S
+                    Tecnología: %S
+                    Portátil:
+                    %S""", super.toString(), movil, proyecto, tecnologia, portatil);
     }
 }

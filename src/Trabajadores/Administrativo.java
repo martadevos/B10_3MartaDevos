@@ -11,6 +11,15 @@ public class Administrativo extends Empleado{
     }
 
     @Override
+    public String toString() {
+        return String.format("""
+                %S
+                PUESTO: Administrativo
+                    Despacho: %S
+                    Número de fax: %S""", super.toString(), despacho, numFax);
+    }
+
+    @Override
     public void subirSalario() {
 
     }
