@@ -30,4 +30,9 @@ public class JefeProyecto extends Empleado implements Cambios{
     public Enumerado.Tecnologia cambiarTecnologia() {
         return null;
     }
+
+    @Override
+    public void subirSalario() {
+        
+    }
 }

@@ -1,6 +1,6 @@
 package Trabajadores;
 
-public class Empleado {
+public abstract class Empleado {
 
     private int antiguedad, salario;
     private String nombre, apellidos, dni, direccion, telf;
@@ -14,4 +14,6 @@ public class Empleado {
         this.direccion = direccion;
         this.telf = telf;
     }
+
+    public abstract void subirSalario();
 }

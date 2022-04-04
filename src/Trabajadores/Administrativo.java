@@ -9,4 +9,9 @@ public class Administrativo extends Empleado{
         this.despacho = despacho;
         this.numFax = numFax;
     }
+
+    @Override
+    public void subirSalario() {
+
+    }
 }
